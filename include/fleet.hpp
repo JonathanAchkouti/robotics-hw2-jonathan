@@ -29,4 +29,13 @@ private:
     // Choose the right containers and justify each choice in a comment.
     // Hint: robots need fast lookup by id.
     // Hint: tasks must always come out highest priority first.
+
+    /* I chose the an unordered map because it can search fast (O(1)) via the key and hashmaps.
+    I used a shared pointer because the fleet stores polymorphic Robot objects and different
+    parts of the program need to access the same Robot. */
+    std::unordered_map<std::string, std::shared_ptr<Robot>> robots_;
+
+    /* Tasks have priorities, so a priority queue only makes sense. */
+    std::priority_queue<Task> tasks_;
+    
 };
