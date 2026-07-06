@@ -3,7 +3,7 @@
 #include <ostream>
 
 
-class Task;
+struct Task;
 
 class Robot {
 public:
@@ -18,6 +18,7 @@ public:
     std::string name()    const;
     int         battery() const;
     std::string status()  const;
+    void set_status(const std::string& status);
 
     bool operator==(const Robot& other) const;
 

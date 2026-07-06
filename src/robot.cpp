@@ -50,3 +50,8 @@ std::ostream& operator<<(std::ostream& os, const Robot& r)
     os << ", Status: " << r.status_;
     return os;
 }
+
+void Robot::set_status(const std::string& status)
+{
+    status_ = status;
+}
