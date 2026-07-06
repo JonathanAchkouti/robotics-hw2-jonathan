@@ -1,4 +1,4 @@
-//ChatGPT helped me created most of the main for testing purposes
+//ChatGPT helped me created most of the main for testing purposes (I understood it)
 
 #include "cleaning_robot.hpp"
 #include "cooking_robot.hpp"
